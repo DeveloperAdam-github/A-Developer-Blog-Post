@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Head from "../components/head"
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
       publishedDate(formatString: "Do MMMM, YYYY")
